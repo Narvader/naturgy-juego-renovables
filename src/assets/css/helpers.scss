@@ -1,0 +1,129 @@
+/* FONTS */
+$montserrat: 'Montserrat', sans-serif;
+$fjalla: 'Fjalla One', sans-serif;
+
+
+/* COLORS */
+$theme-color: #f98f7d;
+$black:#000;
+$white:#fff;
+$blue: #80a1b7;
+$blue-dark: #324251;
+
+
+/* BASICS */
+body{
+	font-family:$montserrat;
+	font-weight: 400;
+	font-size: 16px;
+	color: $blue-dark;
+}
+
+strong {font-weight: 900}
+video, img {max-width: 100%;}
+img {
+    height: auto;
+    display: block;
+}
+iframe {
+	max-width: 100%;
+	margin-bottom: 130px;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+
+
+/* ARTICLE MAIN ELEMENTS */
+p {
+	line-height: 1.64;
+  	letter-spacing: -0.3px;
+    color: #324251;
+}
+
+a {
+	text-decoration:none;
+}
+
+.iframe-pixel, .ec_visit_pixel{display: none;}
+
+
+/* SOCIALS NETWORK */
+.aside {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    background: #000;
+    padding: 10px;
+    z-index: 4;
+    border-radius: 15px 0 0 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+        &.visible {
+        opacity:1;
+        visibility:visible;
+    }
+}
+.aside-logo {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 15px;
+}
+
+.aside-rrss {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background: #fff;
+    color: #000;
+    margin: 10px 0;
+    border-radius: 50%;
+    font-size: 14px;
+    text-align: center;
+    -webkit-transition: background .7s ease-out;
+    -moz-transition: background .7s ease-out;
+    -o-transition: background .7s ease-out;
+    transition: background .7s ease-out;
+    &:hover {
+        color: #FFF;
+        background: $theme-color;
+        text-decoration: none;
+    }
+}
+
+/* HELPERS */
+.relative {position: relative;}
+.text-center{text-align: center;}
+.text-right{text-align: right;}
+.text-left{text-align: left;}
+.text-uppercase {text-transform: uppercase;}
+
+.no-padding {padding:0;}
+.no-margin {margin: 0;}
+.block {display: block;}
+.thin {font-weight:400;}
+.bold {font-weight:700;}
+.extrabold {font-weight:900;}
+.font-small {font-size: 30px;}
+.font-big {font-size:66px;}
+
+
+/* CUSTOM */
+.color {color: $theme-color;}
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    //box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    iframe {
+	    position: absolute;
+	    top:0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	}
+}
