@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-Title: M¿Cuánto sabes de las energías renovables?
+Title: ¿Cuánto sabes de las energías renovables?
 
 This project is a game that check your level of knowledgment in renewable energy. It is developed with in HTML, CSS and ES6 and using Webpack as blunder. It was designed by Laura Martín.
 
