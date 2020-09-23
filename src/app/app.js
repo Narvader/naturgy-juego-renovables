@@ -172,7 +172,7 @@ for( var i = 0; i < btnQuestionArr.length; i++) {
 
     console.log(`ey ` + this.textContent )
 
-    let parent = this.parentElement.parentElement.parentElement.parentElement;
+    let parent = this.parentElement.parentElement.parentElement.parentElement.parentElement;
     let roadContainer = parent.parentElement;
     
     if(!isDevice()) {
